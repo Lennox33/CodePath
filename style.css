@@ -1,0 +1,110 @@
+/*Colors used
+Light blue: #77C9D4
+Light green: #57BC90
+Dark green: #015249
+Grey: #A5A5AF
+*/
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style: none;
+
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  font-family: Arial;
+  color:black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+}
+
+/* General style rule set for flex container */
+.flex-container {
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+              /*Begin Main content*/
+body {
+/* Add a background color or image */
+background-color: white;
+background-image: url('');
+
+/* Customize the font, size, and color for text*/
+font-family: Arial;
+font-size: 16px;
+color: black;
+
+/* Adjust the padding and margins */
+padding-top: 0;
+padding-left: 0;
+padding-right: 0;
+padding-bottom: 0;
+
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+
+text-align: center;
+
+}
+
+.header{
+padding-top: 20px; 
+}
+
+button {
+background-color:  #77C9D4;
+border: black solid 2px;
+color: black;
+font-size: 16px;
+text-align: center;
+padding: 15px 32px;
+cursor: pointer;
+}
+
+button:hover{
+background-color: #015249;
+color: white;
+font-size: 17px;
+}
