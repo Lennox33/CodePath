@@ -4,38 +4,41 @@
 <head>
     <title>Health</title> 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./YinYang.png">
+    <link rel="icon" href="./Images/YinYang.png">
 </head>
 
 <body>
+      <!--- Navbar --->
   <div class="navbar">
   <ul>
-    <li><a href="#">Nav Item 1</a></li>
-    <li><a href="#">Nav Item 2</a></li>
-    <li><a href="#">Nav Item 3</a></li>
-    <li><a href="#">Nav Item 4</a></li>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Impact">Impact</a></li>
+    <li><a href="#News">News</a></li>
     <!-- Stretch Challenge: Drop Down -->
   </ul>
 </div>
-<!-- Flexbox Layout -->
-
-<div class="container">
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-</div>
   
-    <!--- Headings --->
-  <div class="header">
-    <h1>Balance between eating and exercising</h1>
-    <div class="header-img"<img   /></div>
-    <h3>Spread awareness about health</h3>
-    <button type="button" class="header-bttn-left">Click here for recipes</button>
-    <button type="button" class="header-bttn-right">Click here for exercises</button>
+    <!--- Headings / Home --->
+    <div id="Home" class="header">
+      <h1>Balance between eating and exercising</h1>
+    </div>
+
+    <div class="header-container">
+    <div class="header-item">
+      <img id="header-img" src="./Images/download.jpg">
+    </div>
+    <div>
+      <h3 class="header-item">Spread awareness about health</h3>
+    </div>
+    <div id="header-button">
+      <button type="button">Click here for recipes</button>
+      <button type="button">Click here for exercises</button>
+    </div>
   </div>
 
     <!--- About --->
-    <h2>All about health</h2>
+    <h2 id="About">All about health</h2>
     <p>Why is it important to eat healthy and exercise? Why is it important right now?
     </p>
 
@@ -53,8 +56,10 @@
         <li> 35%-45%</li>
         <li> >45%</li>
     </ul>
+
+
     <!--- Impact --->
-    <h2>Impact!</h2>
+    <h2 id="Impact">Impact!</h2>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BHY0FxzoKZE" 
     title="YouTube video player" frameborder="0" 
@@ -75,7 +80,7 @@
     <p>The brain
     </p>
 
-    <h2>Recent News</h2>
+    <h2 id="News">Recent News</h2>
 
         <article>
             
@@ -83,11 +88,27 @@
             <a href="https://www.usnews.com/news/healthiest-communities/articles/2019-09-19/obesity-in-america-a-guide-to-the-public-health-crisis" 
             target="_blank" class="ObesityLink">Click here to read more
               </a>
+            <h3>The importance of a healthy diet and exercise</h3>
+              <a href="https://www.nursinginpractice.com/clinical/obesity-and-nutrition/nutrition/the-importance-of-a-healthy-diet-and-exercise/"
+                target="_blank">Click here to read more</a>
+            </h3>
+            <h3>
+              <a></a>
+            </h3>
             <p></p>
         </article>
     
 
+<footer class="footer">
+  <div><a href="mailto:PCDeditor@cdc.gov">
+    <button class="button">Send an email to the CDC</button>
+    </a>
+    <a href="https://www.cdc.gov/">
+      <button class="button">Click here for the CDC website</button>
+      </a>
 
+  </div>
+</footer>
 </body>
 
 </html>
