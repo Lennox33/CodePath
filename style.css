@@ -28,7 +28,7 @@ Grey: #A5A5AF
 .navbar ul li a {
   font-family: Arial;
   color:white;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   display: block;
   text-decoration: none;
@@ -91,7 +91,6 @@ button:hover{
 body {
 /* Add a background color or image */
 background-color: #57BC90;
-background-image: url('');
 
 /* Customize the font, size, and color for text*/
 font-family: Arial;
