@@ -26,22 +26,22 @@ Grey: #A5A5AF
 
 /* Style rule set for individual li link */
 .navbar ul li a {
-  font-family: Arial;
-  color:white;
-  font-size: 18px;
-  text-decoration: none;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  background-color: black;
+  background-color:  #77C9D4;
+color: black;
+font-size: 16px;
+text-align: center;
+padding: 15px 32px;
+cursor: pointer;
 }
 
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
-  font-weight: bold;
-  background-color: #77C9D4;
+  background-color: #015249;
+  color: white;
+  font-size: 17px;
+  font: bold;
 }
+
 
 /*Header*/
 .header{
@@ -71,21 +71,6 @@ Grey: #A5A5AF
   border-radius: 50px;
   max-width: 40%;
 }
-
-button{
-background-color:  #77C9D4;
-border: black solid 2px;
-color: black;
-font-size: 16px;
-text-align: center;
-padding: 15px 32px;
-cursor: pointer;
-}
-button:hover{
-  background-color: #015249;
-  color: white;
-  font-size: 17px;
-  }
 
       /*Begin Main content*/
 body {
@@ -118,3 +103,9 @@ text-align: center;
   width: 100%;
   background-color: black;
 }
+
+/*Style for toggling dark mode */
+.dark-mode {
+  background-color: black;
+  
+  }
