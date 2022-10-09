@@ -4,6 +4,6 @@ const toggleDarkMode = () => {
 
   // Write your code to manipulate the DOM here
   document.body.classList.toggle("dark-mode");
-  themeButton.addEventListener("click", toggleDarkMode);
-
 }
+
+themeButton.addEventListener("click", toggleDarkMode);

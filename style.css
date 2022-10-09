@@ -42,6 +42,24 @@ cursor: pointer;
   font: bold;
 }
 
+#theme-button{
+  background-color: #015249;
+  color: white;
+}
+
+#theme-button:hover{
+  background-color: #57BC90;
+  color: black;
+  border-color: blanchedalmond;
+  font-weight: bold;
+}
+
+/*Style for toggling dark mode */
+.dark-mode {
+  background-color: black;
+  color: white;
+  }
+
 
 /*Header*/
 .header{
@@ -60,6 +78,7 @@ cursor: pointer;
    margin-bottom: 15px;
    display: flex;
    flex-direction: row;
+   max-width: 40%;
 }
 
 .header-item:nth-of-type(2){
@@ -69,7 +88,6 @@ cursor: pointer;
   
 #header-img{
   border-radius: 50px;
-  max-width: 40%;
 }
 
       /*Begin Main content*/
@@ -104,8 +122,3 @@ text-align: center;
   background-color: black;
 }
 
-/*Style for toggling dark mode */
-.dark-mode {
-  background-color: black;
-  
-  }
