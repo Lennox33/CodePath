@@ -72,23 +72,24 @@ cursor: pointer;
   text-align: center;
   display: flex;
   flex-direction: column;
+  width: 100;
 }
 
-.header-item:nth-of-type(1){
-   margin-bottom: 15px;
-   display: flex;
-   flex-direction: row;
-   max-width: 40%;
+.header-image{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  max-width: 40%;
 }
-
-.header-item:nth-of-type(2){
-  font-size: 30px;
-  max-width: 60%;
-}
-  
 #header-img{
   border-radius: 50px;
 }
+
+.header-img-text{
+  font-size: 30px;
+  max-width: 60%;
+}
+
 
       /*Begin Main content*/
 body {
@@ -133,10 +134,12 @@ text-align: center;
   padding-right: 10px;
 }
 
+
 .footer {
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: black;
+  padding: 10px;
 }
 
