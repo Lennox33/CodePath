@@ -47,7 +47,7 @@ signNowButton.addEventListener('click', validateForm);
 
 //Start news api
 const apiKey = 'sZldM--DTf-CBL45r3V94nNw18N3NiWO05r3yqZnudAQ3ecC';
-const keywords = 'physical health';
+const keywords = 'health';
 const url = 'https://api.currentsapi.services/v1/search?apiKey=' + apiKey + '&keywords=' + keywords;
 
 const getAndDisplayNews = async () => {
@@ -60,7 +60,7 @@ const data = await response.json();
 // Parses the data and assigns the news article array from the objects
 const news = data.news;
 
-  for(let i = 0; i < 6; i++){
+  for(let i = 0; i < 5; i++){
     const title = document.createElement('h3');
     title.textContent = news[i].title;
     
@@ -76,21 +76,32 @@ const news = data.news;
   }
   
 }
+getAndDisplayNews();
 //End news api
 
 //Books section
-const proxyURL = "https://cp-proxy5.herokuapp.com/";
-
-const getBooks = () => {
-  const olQueryURL = "https://openlibrary.org/works/OL20586351W/Spy_School_Goes_South";
-  const bookId = "OL20586351W";
-  const exerciseBookURL = "https://cp-proxy5.herokuapp.com/https://openlibrary.org/works/" + "OL20586351W" + ".json";
-
-fetch('https://openlibrary.org/works/OL20586351W/Spy_School_Goes_South')
+const getbooks = () => {
+  const proxyURL = "https://cp-proxy5.herokuapp.com/";
+  const olQueryURL = "https://openlibrary.org/works/";
+  const bookId = "OL11185076M";
+  const reading = document.getElementById("further-reading")
+  
+  const physicalFitnessURL = proxyURL + olQueryURL + bookId + ".json";
+  
+  fetch(physicalFitnessURL)
   .then((response) => response.json())
   .then((data) => {
     // more code here later
-    console.log(data)
-  });
+    console.log(data);
+    
+    let bookDescription = document.createElement('a');
+    const hrefURL = "https://openlibrary.org/works/" + "OL11185076M";
+      
+    let newContent = "Read" + (data.title) + (data.subjects[0]);
+    
+    bookDescription.innerHTML = newContent ;
+    bookDescription.href = physicalFitnessURL;
+    reading.appendChild(bookDescription);
+});
 }
-getBooks();
+getbooks();

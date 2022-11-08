@@ -4,7 +4,9 @@ Light green: #57BC90
 Dark green: #015249
 Grey: #A5A5AF
 */
-/*Navbar*/
+
+
+/*Start Navbar section*/
 /* General style rule set for all items in ul */
 .navbar{
   list-style-type: none;
@@ -46,15 +48,19 @@ text-decoration: none;
 }
 
 #theme-button{
-  background-color: #015249;
-  color: white;
+  background-color:  #77C9D4;
+color: black;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+text-decoration: none;
 }
 
 #theme-button:hover{
-  background-color: #57BC90;
-  color: black;
-  border-color: blanchedalmond;
-  font-weight: bold;
+  background-color: #015249;
+  color: white;
+  font-size: 17px;
+  font: bold;
 }
 
 /*Style for toggling dark mode */
@@ -62,35 +68,57 @@ text-decoration: none;
   background-color: black;
   color: white;
   }
-/*End Navbar*/
+/*End Navbar section*/
 
-/*Header*/
+
+/*Start Header section*/
 .header{
   margin-bottom: 20px;
-  margin-top: 55px;
+  margin-top: 70px;
 }
 .header-container{
   padding-top: 20px; 
   margin-bottom: 20px;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100;
 }
 
 .header-image{
   margin-bottom: 15px;
   display: flex;
-  flex-direction: row;
-  max-width: 40%;
   border-radius: 50px;
+  max-width: 25%;
+  margin-left: 250px;
 }
 
 .header-img-text{
+  flex-direction: row;
   font-size: 30px;
-  max-width: 60%;
+  float: right;
+  margin-left: 40px;
+}
+
+#header-button button{
+  background-color:  #77C9D4;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#header-button button:hover{
+  background-color: #015249;
+  color: white;
+  font-size: 17px;
+  font: bold;
 }
 /*End Header*/
+
+
 
       /*Begin Main content*/
 body {
@@ -117,6 +145,9 @@ text-align: center;
 
 }
 
+
+
+/*Start petition form*/
 .petition-container{
   display: flex;
   flex-direction: row;
@@ -128,6 +159,10 @@ text-align: center;
 .petition-para{
   width: 55%;
   padding-right: 10px;
+}
+
+.petition-para p{
+  margin-left: 10px;
 }
 
 .signatures{
@@ -150,6 +185,27 @@ text-align: center;
   border-color: red;
   background:pink;
 }
+/*End petition form*/
+
+
+
+/*Start News section*/
+#news{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#news h2{
+  text-align: left;
+  margin-left: 15px;
+}
+
+#news article{
+  margin: 10px;
+  border: solid 2px black;
+  text-align: center;
+}
+/*End News section*/
 
 
 /*Start footer section*/
@@ -158,6 +214,23 @@ text-align: center;
   bottom: 0;
   width: 100%;
   background-color: black;
-  padding: 25px;
+  padding: 19px;
+}
+
+.footer button{
+  background-color:  #77C9D4;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer button:hover{
+  background-color: #015249;
+  color: white;
+  font-size: 16px;
+  font: bold;
 }
 /*End footer section*/
