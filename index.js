@@ -46,7 +46,7 @@ signNowButton.addEventListener('click', validateForm);
 //End petitions form
 
 //Start news api
-const apiKey = 'NLaNBUKGLKf9G0QtdUI-aXToTTrQA8dv4db8a4USVzVX1YRK';
+const apiKey = 'sZldM--DTf-CBL45r3V94nNw18N3NiWO05r3yqZnudAQ3ecC';
 const keywords = 'physical health';
 const url = 'https://api.currentsapi.services/v1/search?apiKey=' + apiKey + '&keywords=' + keywords;
 
@@ -82,11 +82,11 @@ const news = data.news;
 const proxyURL = "https://cp-proxy5.herokuapp.com/";
 
 const getBooks = () => {
-  const olQueryURL = "https://openlibrary.org/works/OL3004974W/Concepts_of_Physical_Fitness?edition=ia%3Aconceptsofphysic0000corb_j5b4";
-  const bookId = "OL3004974W";
-  const exerciseBookURL = "https://cp-proxy5.herokuapp.com/https://openlibrary.org/works/" + "OL3004974W" + ".json";
+  const olQueryURL = "https://openlibrary.org/works/OL20586351W/Spy_School_Goes_South";
+  const bookId = "OL20586351W";
+  const exerciseBookURL = "https://cp-proxy5.herokuapp.com/https://openlibrary.org/works/" + "OL20586351W" + ".json";
 
-fetch('https://openlibrary.org/works/OL3004974W/Concepts_of_Physical_Fitness?edition=ia%3Aconceptsofphysic0000corb_j5b4')
+fetch('https://openlibrary.org/works/OL20586351W/Spy_School_Goes_South')
   .then((response) => response.json())
   .then((data) => {
     // more code here later
