@@ -92,15 +92,13 @@ const getbooks = () => {
   .then((response) => response.json())
   .then((data) => {
     // more code here later
-    console.log(data);
+    // console.log(data);
     
-    let bookDescription = document.createElement('a');
     const hrefURL = "https://openlibrary.org/works/" + "OL11185076M";
-      
-    let newContent = "Read" + (data.title) + (data.subjects[0]);
-    
+    let bookDescription = document.createElement('a');
+    let newContent = "Click here to read: " + (data.title) + " / " + (data.subjects[0]);
     bookDescription.innerHTML = newContent ;
-    bookDescription.href = physicalFitnessURL;
+    bookDescription.href = hrefURL;
     reading.appendChild(bookDescription);
 });
 }
